@@ -107,3 +107,12 @@ Package manager
   
   
   
+  Vagrant
+  --------
+  
+  Takes care of ssh, internet, port forwarding for the VM in virtualbox / vmware station etc.., Creates a new VM in virtual box using vagrantfile and manage the same.
+  
+  vgrant up
+  vgrant halt [power off]
+  vagrant init
+  vagrantfile --> setting of the vm [ this can be shared in community] 
