@@ -80,21 +80,25 @@ Package manager
 
   osboxes.org - various images supported for virtual box to install OS.
   
-  port forwarding --> forward ssh port from host to guest to make the guest vm reachable from other machines.
+  port forwarding --> forward ssh port from host to guest to make the guest vm reachable from other machines. [forward a port from host to guest].
   
     ssh root@127.0.0.1 -p 2222 // do it on the guest OS terminal [configure port forwarding in virtual server Networking option]
   
-  
-  
+  Host only Network
+  -----------------
   File > Host > Host Network Manager
     -> created a host-only network [private network] so that VMs in virtualbox can connect each otehr
   
     --> Settings -> Network -> Adapter -> Host oNly Network created earlier
   
+  option1 : Enable IP forwarding in the host to enable internet connectivity for the VMs.
+  option2 : Enable NAT on the second network adapter to enable internet connectivity for the VMs.
+  
   NAT Network [VMs can access outside world]
   -----------
   refer image in folder
   
-  
+  Bridge Network [Outside systems can access VM]
+  -----------
   
   
