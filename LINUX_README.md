@@ -77,3 +77,24 @@ Package manager
   
   Type 1 --> No OS [vmware]
   Type 2 --> OS on top which a virtualization software is installed [oracle virtual box, vmware workstation [private]]
+
+  osboxes.org - various images supported for virtual box to install OS.
+  
+  port forwarding --> forward ssh port from host to guest to make the guest vm reachable from other machines.
+  
+    ssh root@127.0.0.1 -p 2222 // do it on the guest OS terminal [configure port forwarding in virtual server Networking option]
+  
+  
+  
+  File > Host > Host Network Manager
+    -> created a host-only network [private network] so that VMs in virtualbox can connect each otehr
+  
+    --> Settings -> Network -> Adapter -> Host oNly Network created earlier
+  
+  NAT Network [VMs can access outside world]
+  -----------
+  refer image in folder
+  
+  
+  
+  
