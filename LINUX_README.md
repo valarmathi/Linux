@@ -139,4 +139,16 @@ On app01 and app02: sudo ip route add 172.16.239.0/24 via 172.16.238.10
 
 On app03 and app04: sudo ip route add 172.16.238.0/24 via 172.16.239.10
   
+
+  
+  DNS
+  --
+  
+  /etc/hosts --> give other hosts details
+  cat /etc/resolv.conf --> nameserver 8.8.8.8
+  
+  the entry in /etc/hosts will take precedence.  [defined in /etc/nsswitch.conf] --> the order can be changed here.
+  
+  
+  
   
