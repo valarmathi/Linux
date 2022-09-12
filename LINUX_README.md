@@ -116,3 +116,27 @@ Package manager
   vgrant halt [power off]
   vagrant init
   vagrantfile --> setting of the vm [ this can be shared in community] 
+  
+  
+  
+Assign IP Address
+  ----------------
+To assign new IPs for app01 , the below command need to be executed on app01.
+For app01: sudo ip addr add 172.16.238.15/24 dev eth0
+
+Please follow the same procedure for other app nodes as well:
+For app02: sudo ip addr add 172.16.238.16/24 dev eth0
+
+For app03: sudo ip addr add 172.16.239.15/24 dev eth0
+
+For app04: sudo ip addr add 172.16.239.16/24 dev eth0
+
+  
+  Add Routing
+  -------
+  
+On app01 and app02: sudo ip route add 172.16.239.0/24 via 172.16.238.10
+
+On app03 and app04: sudo ip route add 172.16.238.0/24 via 172.16.239.10
+  
+  
