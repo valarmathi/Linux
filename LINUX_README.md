@@ -101,4 +101,9 @@ Package manager
   Bridge Network [Outside systems can access VM]
   -----------
   
+  Cloning - VM should be turned off to clone a VM.
+    Adapter 1 --> NAT for network connectivity
+    Adapter 2 --> Connect to Host Netwrok.
+  
+  
   
