@@ -70,3 +70,10 @@ Package manager
   
   systemctl start my_app
   
+
+  
+  Hypervisors
+  ------------
+  
+  Type 1 --> No OS [vmware]
+  Type 2 --> OS on top which a virtualization software is installed [oracle virtual box, vmware workstation [private]]
